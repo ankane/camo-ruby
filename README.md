@@ -4,13 +4,13 @@ Ruby client for [Camo](https://github.com/atmos/camo)
 
 ## Get Started
 
+**Note:** If you have not set up the camo server, start with [Deploying to Heroku](#deploying-to-heroku).
+
 Add this line to your application’s Gemfile:
 
 ```ruby
 gem "camo"
 ```
-
-**Note:** If you have not set up the camo server, visit [Deploying to Heroku](#deploying-to-heroku).
 
 Add your camo host and key to your environment or create an initializer `config/initializers/camo.rb`.
 
