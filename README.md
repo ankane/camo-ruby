@@ -10,6 +10,8 @@ Add this line to your application’s Gemfile:
 gem "camo"
 ```
 
+**Note:** If you have not set up the camo server, visit [Deploying to Heroku](#deploying-to-heroku).
+
 Add your camo host and key to your environment or create an initializer `config/initializers/camo.rb`.
 
 ```ruby
