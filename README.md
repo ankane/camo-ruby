@@ -1,6 +1,6 @@
 # Camo
 
-Ruby client for [Camo](https://github.com/atmos/camo)
+Ruby client for [Camo](https://github.com/atmos/camo) - the SSL image proxy :lock:
 
 ## Get Started
 
@@ -56,7 +56,7 @@ heroku open
 
 ## Credit
 
-Thanks to [Corey Donohoe](https://github.com/atmos) for creating camo and providing most of the Ruby code for this gem.
+Thanks to [Corey Donohoe](https://github.com/atmos) for creating Camo and providing most of the Ruby code for this gem.
 
 ## Contributing
 
