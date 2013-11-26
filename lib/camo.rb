@@ -11,5 +11,11 @@ module Camo
 
 end
 
-ActionView::Base.send :include, Camo
-ActionController::Base.send :include, Camo
+if defined?(Rails)
+  ActionView::Base.send :include, Camo
+  ActionController::Base.send :include, Camo
+end
+
+if defined?(Sinatra)
+  Sinatra::Base.helpers Camo
+end
