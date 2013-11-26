@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Camo::VERSION
   spec.authors       = ["Andrew Kane"]
   spec.email         = ["andrew@chartkick.com"]
-  spec.description   = %q{Ruby client for the camo proxy}
-  spec.summary       = %q{Ruby client for the camo proxy}
+  spec.description   = %q{Ruby client for Camo - the SSL image proxy}
+  spec.summary       = %q{Ruby client for Camo - the SSL image proxy}
   spec.homepage      = "https://github.com/ankane/camo"
   spec.license       = "MIT"
 
