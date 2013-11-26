@@ -4,7 +4,7 @@ Ruby client for [Camo](https://github.com/atmos/camo) - the SSL image proxy :loc
 
 ## Get Started
 
-**Note:** If you have not set up the Camo server, start with [Deploying to Heroku](#deploying-to-heroku).
+**Note:** If you have not set up the Camo server, start with [Deploying the Server](#deploying-the-server).
 
 Add this line to your application’s Gemfile:
 
@@ -27,7 +27,7 @@ You can now use the `camo` method in your views and controllers.
 
 It’s that easy!
 
-## Deploying to Heroku
+## Deploying the Server
 
 Clone the camo repository.
 
