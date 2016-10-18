@@ -39,7 +39,8 @@ cd camo
 Create a new project on [Heroku](https://www.heroku.com/).
 
 ```sh
-heroku create camo
+heroku create myapp-camo
+git push heroku master
 ```
 
 Choose a [random secret key](https://www.random.org/passwords/?num=20&len=24&format=html&rnd=new) and add it to your app.
