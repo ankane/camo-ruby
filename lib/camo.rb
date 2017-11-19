@@ -3,6 +3,7 @@ require "openssl"
 
 module Camo
   def camo(image_url)
+    raise "No CAMO_KEY" unless ENV["CAMO_KEY"]
     hexdigest = OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new("sha1"), ENV["CAMO_KEY"], image_url)
     encoded_image_url = image_url.unpack('H*').first
     "#{ENV["CAMO_HOST"]}/#{hexdigest}/#{encoded_image_url}"
