@@ -22,7 +22,7 @@ ENV["CAMO_KEY"] = "rzsJbU5YxDfdP3FXHjshtgEN"
 You can now use the `camo` method in your views and controllers.
 
 ```erb
-<%= image_tag camo("http://placekitten.com/g/200/300") %>
+<%= image_tag camo("https://placekitten.com/g/200/300") %>
 ```
 
 It’s that easy!
