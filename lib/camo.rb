@@ -11,7 +11,7 @@ module Camo
   end
 end
 
-if defined?(Rails)
+if defined?(ActiveSupport)
   ActiveSupport.on_load(:action_view) do
     include Camo
   end
