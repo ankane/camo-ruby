@@ -1,4 +1,4 @@
-# Camo
+# Camo Ruby
 
 Ruby client for [Camo](https://github.com/atmos/camo) - the SSL image proxy :lock:
 
@@ -63,16 +63,16 @@ Thanks to [Corey Donohoe](https://github.com/atmos) for creating Camo and provid
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
 
-- [Report bugs](https://github.com/ankane/camo/issues)
-- Fix bugs and [submit pull requests](https://github.com/ankane/camo/pulls)
+- [Report bugs](https://github.com/ankane/camo-ruby/issues)
+- Fix bugs and [submit pull requests](https://github.com/ankane/camo-ruby/pulls)
 - Write, clarify, or fix documentation
 - Suggest or add new features
 
 To get started with development:
 
 ```sh
-git clone https://github.com/ankane/camo.git
-cd camo
+git clone https://github.com/ankane/camo-ruby.git
+cd camo-ruby
 bundle install
 bundle exec rake test
 ```

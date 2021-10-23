@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "camo"
   spec.version       = Camo::VERSION
   spec.summary       = "Ruby client for Camo - the SSL image proxy"
-  spec.homepage      = "https://github.com/ankane/camo"
+  spec.homepage      = "https://github.com/ankane/camo-ruby"
   spec.license       = "MIT"
 
   spec.author        = "Andrew Kane"
