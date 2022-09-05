@@ -31,6 +31,10 @@ You can now use the `camo` method in your views and controllers.
 
 Thanks to [Corey Donohoe](https://github.com/atmos) for creating Camo and providing most of the Ruby code for this gem.
 
+## History
+
+View the [changelog](CHANGELOG.md)
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
