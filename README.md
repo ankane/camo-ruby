@@ -50,5 +50,6 @@ To get started with development:
 git clone https://github.com/ankane/camo-ruby.git
 cd camo-ruby
 bundle install
+go-camo -k 461fbf74af826c3a1020
 bundle exec rake test
 ```
