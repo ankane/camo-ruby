@@ -1,18 +1,18 @@
 # Camo Ruby
 
-Ruby client for [Camo](https://github.com/atmos/camo) - the SSL image proxy :lock:
+Ruby client for [Camo](https://github.com/atmos/camo) and [Go-Camo](https://github.com/cactus/go-camo) - the SSL image proxy :lock:
 
 [![Build Status](https://github.com/ankane/camo-ruby/workflows/build/badge.svg?branch=master)](https://github.com/ankane/camo-ruby/actions)
 
-## Get Started
-
-**Note:** If you have not set up the Camo server, start with [Deploying the Server](#deploying-the-server).
+## Installation
 
 Add this line to your application’s Gemfile:
 
 ```ruby
 gem "camo"
 ```
+
+## Getting Started
 
 Add your Camo host and key to your environment or create an initializer `config/initializers/camo.rb`.
 
@@ -25,36 +25,6 @@ You can now use the `camo` method in your views and controllers.
 
 ```erb
 <%= image_tag camo("https://placekitten.com/g/200/300") %>
-```
-
-It’s that easy!
-
-## Deploying the Server
-
-Clone the camo repository.
-
-```sh
-git clone https://github.com/atmos/camo.git
-cd camo
-```
-
-Create a new project on [Heroku](https://www.heroku.com/).
-
-```sh
-heroku create myapp-camo
-git push heroku master
-```
-
-Choose a [random secret key](https://www.random.org/passwords/?num=20&len=24&format=html&rnd=new) and add it to your app.
-
-```sh
-heroku config:set CAMO_KEY=rzsJbU5YxDfdP3FXHjshtgEN
-```
-
-Open your app to make sure it’s working. You should see the text “hwhat”.
-
-```sh
-heroku open
 ```
 
 ## Credit
