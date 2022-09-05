@@ -2,6 +2,8 @@
 
 Ruby client for [Camo](https://github.com/atmos/camo) - the SSL image proxy :lock:
 
+[![Build Status](https://github.com/ankane/camo-ruby/workflows/build/badge.svg?branch=master)](https://github.com/ankane/camo-ruby/actions)
+
 ## Get Started
 
 **Note:** If you have not set up the Camo server, start with [Deploying the Server](#deploying-the-server).
