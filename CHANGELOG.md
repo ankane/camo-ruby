@@ -4,4 +4,13 @@
 
 ## 0.1.0 (2016-10-17)
 
-- Started changelog
+- Improved performance
+- Fixed deprecation warning
+
+## 0.0.2 (2013-11-25)
+
+- Added support for Sinatra
+
+## 0.0.1 (2013-11-25)
+
+- First release
