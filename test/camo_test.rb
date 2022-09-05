@@ -3,7 +3,8 @@ require_relative "test_helper"
 class CamoTest < Minitest::Test
   def test_png
     url = camo("https://ankane.org/images/archer-large.png")
-    assert url.start_with?(ENV["CAMO_HOST"])
+    expected = "http://localhost:8080/2856d0dad17ea7156fa00cdb68805b398bafdef7/68747470733a2f2f616e6b616e652e6f72672f696d616765732f6172636865722d6c617267652e706e67"
+    assert_equal expected, url
     assert_equal "\x89PNG".b, URI.open(url).read[0..3]
   end
 
