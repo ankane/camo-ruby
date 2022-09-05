@@ -9,7 +9,7 @@ module Camo
     raise "No CAMO_KEY" unless ENV["CAMO_KEY"]
     raise "No CAMO_HOST" unless ENV["CAMO_HOST"]
     hexdigest = OpenSSL::HMAC.hexdigest("sha1", ENV["CAMO_KEY"], image_url)
-    encoded_image_url = image_url.unpack("H*").first
+    encoded_image_url = image_url.unpack1("H*")
     "#{ENV["CAMO_HOST"]}/#{hexdigest}/#{encoded_image_url}"
   end
 end
