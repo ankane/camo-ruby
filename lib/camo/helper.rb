@@ -1,7 +1,7 @@
 module Camo
   module Helper
-    def camo(image_url)
-      key = Camo.key
+    def camo(image_url, key: nil)
+      key ||= Camo.key
       host = Camo.host
 
       raise "No CAMO_KEY" unless key
