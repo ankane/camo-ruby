@@ -4,9 +4,9 @@ require "minitest/autorun"
 require "minitest/pride"
 require "open-uri"
 
-ENV["CAMO_HOST"] ||= "http://localhost:8080"
-ENV["CAMO_KEY"]  ||= "461fbf74af826c3a1020"
+Camo.host = "http://localhost:8080"
+Camo.key = "461fbf74af826c3a1020"
 
 class Minitest::Test
-  include Camo
+  include Camo::Helper
 end

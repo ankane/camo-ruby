@@ -1,8 +1,8 @@
 module Camo
   module Helper
     def camo(image_url)
-      key = ENV["CAMO_KEY"]
-      host = ENV["CAMO_HOST"]
+      key = Camo.key
+      host = Camo.host
 
       raise "No CAMO_KEY" unless key
       raise "No CAMO_HOST" unless host

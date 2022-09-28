@@ -6,6 +6,18 @@ require "camo/helper"
 require "camo/version"
 
 module Camo
+  class << self
+    attr_writer :host, :key
+
+    def host
+      @host ||= ENV["CAMO_HOST"]
+    end
+
+    def key
+      @key ||= ENV["CAMO_KEY"]
+    end
+  end
+
   # TODO remove in 0.3.0
   include Helper
 end
