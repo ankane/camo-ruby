@@ -4,18 +4,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.1
-        bundler-cache: true
-    - name: Install Go-Camo
-      run: |
-        cd /tmp
-        wget -q https://github.com/cactus/go-camo/releases/download/v$GOCAMO_VERSION/go-camo-$GOCAMO_VERSION.go1176.linux-amd64.tar.gz
-        tar xzf go-camo-$GOCAMO_VERSION.go1176.linux-amd64.tar.gz
-        cd go-camo-$GOCAMO_VERSION
-        bin/go-camo -k 461fbf74af826c3a1020 &
-      env:
-        GOCAMO_VERSION: 2.4.0
-    - run: bundle exec rake test
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+      - name: Install Go-Camo
+        run: |
+          cd /tmp
+          wget -q https://github.com/cactus/go-camo/releases/download/v$GOCAMO_VERSION/go-camo-$GOCAMO_VERSION.go1176.linux-amd64.tar.gz
+          tar xzf go-camo-$GOCAMO_VERSION.go1176.linux-amd64.tar.gz
+          cd go-camo-$GOCAMO_VERSION
+          bin/go-camo -k 461fbf74af826c3a1020 &
+        env:
+          GOCAMO_VERSION: 2.4.1
+      - run: bundle exec rake test
