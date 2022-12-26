@@ -12,7 +12,7 @@ jobs:
       - name: Install Go-Camo
         run: |
           cd /tmp
-          wget -q https://github.com/cactus/go-camo/releases/download/v$GOCAMO_VERSION/go-camo-$GOCAMO_VERSION.go1176.linux-amd64.tar.gz
+          wget -q https://github.com/cactus/go-camo/releases/download/v$GOCAMO_VERSION/go-camo-$GOCAMO_VERSION.go1191.linux-amd64.tar.gz
           tar xzf go-camo-$GOCAMO_VERSION.go1191.linux-amd64.tar.gz
           cd go-camo-$GOCAMO_VERSION
           bin/go-camo -k 461fbf74af826c3a1020 &
