@@ -5,7 +5,7 @@ class CamoTest < Minitest::Test
     url = camo("https://ankane.org/images/archer-large.png")
     expected = "http://localhost:8080/2856d0dad17ea7156fa00cdb68805b398bafdef7/68747470733a2f2f616e6b616e652e6f72672f696d616765732f6172636865722d6c617267652e706e67"
     assert_equal expected, url
-    assert_equal "\x89PNG".b, URI.open(url).read[0..3]
+    assert_equal "\x89PNG".b, URI.parse(url).read[0..3]
   end
 
   def test_html
@@ -22,7 +22,7 @@ class CamoTest < Minitest::Test
 
   def assert_error(url, status, message)
     error = assert_raises(OpenURI::HTTPError) do
-      URI.open(url)
+      URI.parse(url).open
     end
     response = error.io
     assert_equal status, response.status[0].to_i
