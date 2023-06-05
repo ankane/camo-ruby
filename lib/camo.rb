@@ -2,8 +2,8 @@
 require "openssl"
 
 # modules
-require "camo/helper"
-require "camo/version"
+require_relative "camo/helper"
+require_relative "camo/version"
 
 module Camo
   class << self
