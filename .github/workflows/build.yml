@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2
+          ruby-version: 3.3
           bundler-cache: true
       - name: Install Go-Camo
         run: |
@@ -17,5 +17,5 @@ jobs:
           cd go-camo-$GOCAMO_VERSION
           bin/go-camo -k 461fbf74af826c3a1020 &
         env:
-          GOCAMO_VERSION: 2.4.1
+          GOCAMO_VERSION: 2.4.8
       - run: bundle exec rake test
