@@ -17,5 +17,5 @@ jobs:
           cd go-camo-$GOCAMO_VERSION
           bin/go-camo -k 461fbf74af826c3a1020 &
         env:
-          GOCAMO_VERSION: 2.4.8
+          GOCAMO_VERSION: 2.4.13
       - run: bundle exec rake test
