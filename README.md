@@ -2,7 +2,7 @@
 
 Ruby client for [Camo](https://github.com/atmos/camo) and [Go-Camo](https://github.com/cactus/go-camo) - the SSL image proxy :lock:
 
-[![Build Status](https://github.com/ankane/camo-ruby/workflows/build/badge.svg?branch=master)](https://github.com/ankane/camo-ruby/actions)
+[![Build Status](https://github.com/ankane/camo-ruby/actions/workflows/build.yml/badge.svg)](https://github.com/ankane/camo-ruby/actions)
 
 ## Installation
 
