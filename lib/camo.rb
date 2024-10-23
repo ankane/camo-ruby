@@ -17,9 +17,6 @@ module Camo
       @key ||= ENV["CAMO_KEY"]
     end
   end
-
-  # TODO remove in 0.3.0
-  include Helper
 end
 
 if defined?(ActiveSupport)
