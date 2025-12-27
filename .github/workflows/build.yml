@@ -7,15 +7,15 @@ jobs:
       - uses: actions/checkout@v5
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.4
+          ruby-version: "4.0"
           bundler-cache: true
       - name: Install Go-Camo
         run: |
           cd /tmp
-          wget -q https://github.com/cactus/go-camo/releases/download/v$GOCAMO_VERSION/go-camo-$GOCAMO_VERSION.go1230.linux-amd64.tar.gz
-          tar xzf go-camo-$GOCAMO_VERSION.go1230.linux-amd64.tar.gz
+          wget -q https://github.com/cactus/go-camo/releases/download/v$GOCAMO_VERSION/go-camo-$GOCAMO_VERSION.go1255.linux-amd64.tar.gz
+          tar xzf go-camo-$GOCAMO_VERSION.go1255.linux-amd64.tar.gz
           cd go-camo-$GOCAMO_VERSION
           bin/go-camo -k 461fbf74af826c3a1020 &
         env:
-          GOCAMO_VERSION: 2.6.0
+          GOCAMO_VERSION: 2.7.2
       - run: bundle exec rake test
