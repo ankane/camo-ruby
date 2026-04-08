@@ -9,7 +9,7 @@ class CamoTest < Minitest::Test
   end
 
   def test_html
-    url = camo("https://ankane.org/")
+    url = camo("https://ankane.org/robots.txt")
     assert_error url, 400, "Unsupported content-type returned"
   end
 
